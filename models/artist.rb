@@ -10,7 +10,10 @@ class Artist
     @name = options['name']
   end
 
-
+  def delete_all()
+    sql = "DELETE FROM artists"
+    SqlRunner.run(sql)
+  end
 
 
 
